@@ -8,7 +8,7 @@ int main(){
     int n=rand()%100+1; // Generates a randomly generated number from 1-100.
     int guess,i=0; 
     char text[] = "Welcome to Guess the Number!";
-    for (int j = 0; text[j] != '\0'; j++) //This particular loop is for adding gravity to the appearance of "Welcome" screen!
+    for (int j = 0; text[j] != '\0'; j++) // This particular loop is for adding gravity to the appearance of "Welcome" screen!
     {
         printf("%c", text[j]);
         fflush(stdout);
@@ -19,7 +19,9 @@ int main(){
         while (1)
         {
             printf("Guess The Number : ");
-            scanf("%d", &guess);
+            scanf("%d", &guess); // User inputs their guess
+
+          if(guess >=1 && guess <=100 ){ // Checks whether or not, number entered by user is in the valid range 
             if (guess == n)
             {
                 i++;
@@ -32,6 +34,11 @@ int main(){
                 printf("%d was not the number! Trial number : %d!\n", guess, i);
                 continue;
             }
+        }
+          else{
+            printf("%d is not in the given range (1-100)!\n",guess);
+            continue;
+          }
         }
         return 0;
     }
