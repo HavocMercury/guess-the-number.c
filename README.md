@@ -82,7 +82,7 @@ Planned improvements include:
 
 * [ ] Add difficulty levels
 * [ ] Add higher/lower hints
-* [ ] Add input validation
+* [x] Add input validation
 * [ ] Improve the console interface
 
 ## Status
