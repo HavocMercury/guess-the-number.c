@@ -81,7 +81,7 @@ This project helped me practice:
 Planned improvements include:
 
 * [ ] Add difficulty levels
-* [ ] Add higher/lower hints
+* [x] Add higher/lower hints
 * [x] Add input validation
 * [ ] Improve the console interface
 
